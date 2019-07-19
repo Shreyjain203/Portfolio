@@ -168,7 +168,7 @@
 				.end_page
 				{
 					height: 100vh;
-					background: linear-gradient(241deg, #ffffff 0%, #1fc8db 51%, #2cb5e8 75%);
+					background: linear-gradient(241deg, #ffffff 0%, #1fc8db 51%, #2cb5e8 75%); 
 				}
 				.end_inner_page
 				{
@@ -182,18 +182,26 @@
 					width: 50%;
 					padding: 10px;
 				}
+				table.table{
+					table-layout: fixed;
+					width: 80%;  
+				}
 				/*--- page 5 ends --*/
 				
 				/*---kinda footer---*/
 				.last
 				{
+					padding-bottom: 40px;
 					background: linear-gradient(241deg, #ffffff 0%, #1fc8db 51%, #2cb5e8 75%);
 				}
 				.inner_of_last
 				{
 					padding-top:50px;
 					margin: 0 auto;
-					max-width: 1200px;
+					max-width: 1200px;	
+				}
+				.last_social_media{
+					float: right;
 				}
 				.icons-social-media
 				{
@@ -217,10 +225,13 @@
 				.follow_me 
 				{
 					padding-left: 400px;
+					margin-top: 10px;
+					text-align: center;
 					color: black;
 				}
 				.bottom_quote
 				{
+					margin-top: 10px;
 					text-align:right;
 				}
 				/*---kinda footer ends --*/
@@ -308,17 +319,17 @@
 					<div class="column" style="background-color:#aaa;">
 						<h2>HIGH SCHOOL</h2><br>
 						<h4>Vanasthali Public School</h4>
-						<p>C.G.P.A.: 9.0</p>
+						<p>CGPA: 9.0</p>
 					</div>
 					<div class="column" style="background-color:#bbb;">
 						<h2>HIGHER SECONDARY</h2><br>
 						<h4>Vanasthali Public School</h4>
-						<p>Some text..</p>
+						<p>Percentage: 88.6%</p>
 					</div>
 					<div class="column" style="background-color:#ccc;">
 						<h2>B.TECH</h2><br>
 						<h4>Maharaja Agrasen Institute Of Technology</h4>
-						<p>Some text..</p>
+						<p>Current CGPA: 6.84</p>
 					</div>	
 					
 				</div>
@@ -414,7 +425,36 @@
 			   <div class="end_inner_page">
 						<div class="end_page_column">
 						<h2 class = "h1_others" style="margin-bottom:50px">QUICK ID</h2>
-						<p>Some text..</p>
+						<table class = "table">
+							<tr >
+							  <td>Phone Number</td>
+							  <td>:</td>
+							  <td>9911009051</td>
+							</tr>
+							<tr>
+							  <td>Email</td>
+							  <td>:</td>
+							  <td><a href = "mailto:shreyjain203@gmail.com?subject = Want to connect&body = Hi There,">SHREYJAIN203@GMAIL.COM</a></td>
+							</tr>
+							<tr >
+								<td>website</td>
+								<td>:</td>
+								<td><a href="https://shreyjain203.github.io/Portfolio/">shreyjain203.github.io/Portfolio/</a></td>
+							  </tr>
+							  <tr>
+								<td>Address</td>
+								<td>:</td>
+								<td>20B Pocket-B8,
+									Mayur Vihar Phase 3
+									Delhi-110096
+								</td>
+							  </tr>
+							  <tr>
+								<td></td>
+								<td></td>
+								<td></td>
+							  </tr>
+						  </table>
 					</div>
 					<div class="end_page_column" style="background-color:#bbb;">
 						<h2 style="margin-bottom:50px">CONTACT ME</h2>
@@ -430,25 +470,19 @@
 				<!---- footer --->
 			<div class="last">
 				<div class="inner_of_last">
-				
-				
 					<!---  Social Media Icons  --->
+					<div class = last_social_media>
 					<a href="https://twitter.com/shrey20031999"><img src="twitter.png" alt="Smiley face" class="icons-social-media" > </img></a>
 					<a href="https://www.facebook.com/profile.php?id=100005959334900"><img src="facebook.png" alt="Smiley face" class="icons-social-media" > </img></a>
 					<a href="https://www.linkedin.com/in/shrey-jain-17b072140/"><img src="linkedin.png" alt="Smiley face" class="icons-social-media" > </img></a>
 					<a href="https://github.com/Shreyjain203"><img src="github.png" alt="Smiley face" class="icons-social-media" > </img></a>
 						<!--- end of social media icons--->		
-						
-						<a href="SHREY_JAIN_RESUME.docx" download ><button class="button_resume_bottom">DOWNLOAD MY FULL RESUME</button></a>
+						</div>
+						<div class = "last_download_button"><a href="SHREY_JAIN_RESUME.docx" download ><button class="button_resume_bottom">DOWNLOAD MY FULL RESUME</button></a></div>
 			
-						<p class="follow_me">I'LL REPLY SOON @ <a href = "mailto:shreyjain203@gmail.com?subject = Want to connect&body = Hi There,">SHREYJAIN203@GMAIL.COM</a></p>
+						<div class = "email"><p class="follow_me">I'LL REPLY SOON @ <a href = "mailto:shreyjain203@gmail.com?subject = Want to connect&body = Hi There,">SHREYJAIN203@GMAIL.COM</a></p></div>
+						<h6 class = "bottom_quote">STAY FRESH BE SOCIAL</h6>
 							</div>
-
-			
-			
-			
-				
-				<h6 class = "bottom_quote">STAY FRESH BE SOCIAL</h6>
 			</div>
 			
 				<!---- footer ends here --->
